@@ -1,5 +1,5 @@
-const arr1 = [7, 2, 3];
-const arr2 = [4, 1, 9];
+const arr1 = [7, 2, 3, 3];
+const arr2 = [4, 1, 9, 4];
 
 const same = (arr1, arr2) => {
   // sprawdz czy tablice mają tą samą długość
@@ -7,13 +7,16 @@ const same = (arr1, arr2) => {
     return false;
   }
 
-  // podnieś do kwadratu elemrnty z arr 1
-
+  
   let obj1 = {};
+  // policz ile razy występuje dany element w tablicy
 
   for (let val of arr1) {
-    obj1[val] = (obj1[val] || 0) +1;
+    obj1[val] = (obj1[val] || 0) + 1;
   }
+
+  console.log(obj1)
+
 
   const obj2 = {
     name: 'Janek',
@@ -49,10 +52,6 @@ const same = (arr1, arr2) => {
   }
 
   console.log(obj3);
-
-
-
-
 
   return true;
 };

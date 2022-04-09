@@ -6,14 +6,15 @@ function same(arr1, arr2){
     let frequencyCounter2 = {}
     for(let val of arr1){
         frequencyCounter1[val] = (frequencyCounter1[val] || 0) + 1
-        console.log(frequencyCounter1[val])
+        // console.log(frequencyCounter1[val])
         // console.log(val)
     }
     for(let val of arr2){
         frequencyCounter2[val] = (frequencyCounter2[val] || 0) + 1        
     }
     console.log(frequencyCounter1);
-    // console.log(frequencyCounter2);
+    console.log(frequencyCounter2);
+
     for(let key in frequencyCounter1){
         if(!(key ** 2 in frequencyCounter2)){
             return false
@@ -25,4 +26,4 @@ function same(arr1, arr2){
     return true
 }
 
-console.log(same([1,2,3,2,5], [9,1,4,4,11]))
+console.log(same([1,2,3,2,5], [1,4,9,4,25]))
