@@ -15,7 +15,7 @@ function countUniqueValues(arr){
     
 };
 
-// console.log(countUniqueValues([1,1,1,1,1,1,1,1,1,1,1,1,2]));
+console.log(countUniqueValues([1,1,1,1,1,1,1,1,1,1,1,1,2]));
 console.log(countUniqueValues([]));
 console.log(countUniqueValues([-1,-1,2]));
-// console.log(countUniqueValues([1,1,2,3,3,3,5,5,5,12,13,13,13]));
+console.log(countUniqueValues([1,1,2,3,3,3,5,5,5,12,13,13,13]));
