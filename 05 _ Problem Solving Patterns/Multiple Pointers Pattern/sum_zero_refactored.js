@@ -1,5 +1,7 @@
 console.log("hello word");
 
+
+// znajduje pare cyfr ktorych suma daje zero
 function sumZero(arr) {
   let left = 0;
   let right = arr.length - 1;

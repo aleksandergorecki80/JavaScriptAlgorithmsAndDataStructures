@@ -1,3 +1,6 @@
+// zlicza ile jest liczb unikalnych 
+//tzn nie bez powtarzania (1,1,1) liczy 1 raz
+
 function countUniqueValues(arr){
     if(arr.length === 0){
         return arr.length;
